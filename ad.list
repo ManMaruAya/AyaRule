@@ -1,0 +1,15 @@
+DOMAIN,adimg.uve.weibo.com,REJECT
+DOMAIN,api.sobot.com,REJECT
+DOMAIN,ad.us.sina.cnnn,REJECT
+DOMAIN,adashxgc.ut.taobao.com,REJECT
+DOMAIN,g.alicdn.com,REJECT
+DOMAIN,gm.alicdn.com,REJECT
+DOMAIN,gw.alicdn.com,REJECT
+DOMAIN,img.alicdn.com,REJECT
+DOMAIN,xlwb.365dmp.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,pgdt.ugdtimg.com,REJECT
+DOMAIN,log-api.pangolin-sdk-toutiao.com,REJECT
+DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT
+DOMAIN,sf3-be-pack.pglstatp-toutiao.com,REJECT
+DOMAIN,sf6-be-pack.pglstatp-toutiao.com,REJECT
