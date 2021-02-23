@@ -1,0 +1,2 @@
+# AyaRule
+For self rule
