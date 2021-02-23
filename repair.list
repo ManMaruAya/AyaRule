@@ -1,2 +1,3 @@
-DOMAIN-SUFFIX,bing.com,DIRECT
+HOST-SUFFIX,bing.com,DIRECT
+HOST-SUFFIX,twitter.com,台湾
 USER-AGENT,*MicroMessenger,DIRECT
