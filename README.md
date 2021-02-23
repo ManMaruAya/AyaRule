@@ -1,2 +1,2 @@
 # AyaRule
-For self rule
+Self rule list
