@@ -3,6 +3,7 @@ host,dp.im.weibo.cn,reject
 host,api.sobot.com,reject
 host,ad.us.sina.cn,reject
 host,adashxgc.ut.taobao.com,reject
+host,adashx.ut.taobao.com,reject
 host,xlwb.365dmp.com,reject
 host,sdk.e.qq.com,reject
 host,pgdt.ugdtimg.com,reject
