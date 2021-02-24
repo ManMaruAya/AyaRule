@@ -1,4 +1,6 @@
+user-agent,*MicroMessenger,direct
 host-suffix,bing.com,direct
 host-suffix,gmail.com,全球加速
 host-suffix,twitter.com,台湾
-user-agent,*MicroMessenger,direct
+host-suffix,pixiv.net,日本
+host-suffix,pximg.net,日本
