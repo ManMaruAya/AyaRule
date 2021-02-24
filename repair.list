@@ -1,5 +1,6 @@
 user-agent,*MicroMessenger,direct
 host-suffix,bing.com,direct
+host-suffix,apoll.m.taobao.com,direct
 host-suffix,gmail.com,全球加速
 host-suffix,twitter.com,台湾
 host-suffix,pixiv.net,日本
