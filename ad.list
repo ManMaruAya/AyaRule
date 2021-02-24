@@ -1,10 +1,8 @@
-host,adimg.uve.weibo.com,reject
+host-suffix,uve.weibo.com,reject
+host,dp.im.weibo.cn,reject
 host,api.sobot.com,reject
-host,ad.us.sina.cnnn,reject
+host,ad.us.sina.cn,reject
 host,adashxgc.ut.taobao.com,reject
-host,g.alicdn.com,reject
-host,gm.alicdn.com,reject
-host,gw.alicdn.com,reject
 host,xlwb.365dmp.com,reject
 host,sdk.e.qq.com,reject
 host,pgdt.ugdtimg.com,reject
