@@ -1,2 +1,2 @@
 # AyaRule
-Self rule list
+A rule list for complete my using config.
