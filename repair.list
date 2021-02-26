@@ -9,5 +9,6 @@ host-suffix,unilog.wostore.cn,direct
 host-suffix,gmail.com,全球加速
 host-suffix,miru.cloud,全球加速
 host-suffix,twitter.com,台湾
-host-suffix,pixiv.net,日本
+host-keyword,pixiv,日本
 host-suffix,pximg.net,日本
+host-keyword,sekai,台湾
