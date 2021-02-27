@@ -2,10 +2,7 @@ host-suffix,uve.weibo.com,reject
 host,dp.im.weibo.cn,reject
 host,api.sobot.com,reject
 host,ad.us.sinaimg.cn,reject
-host,adashxgc.ut.taobao.com,reject
-host,h-adashx.ut.taobao.com,reject
 host,xlwb.365dmp.com,reject
-host,sdk.e.qq.com,reject
 host,pgdt.ugdtimg.com,reject
 host,log-api.pangolin-sdk-toutiao.com,reject
 host,api-access.pangolin-sdk-toutiao.com,reject
