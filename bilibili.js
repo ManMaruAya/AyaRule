@@ -65,7 +65,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`开屏广告处理出现异常：${err}`);
         }
         break;
-      // 标签页处理，如去除会员购等等 
+      // 标签页处理，如去除会员购等等
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try{
           // 442 开始为概念版id
@@ -80,6 +80,26 @@ let magicJS = MagicJS(scriptName, 'INFO');
             obj['data']['tab'] = tab;
           }
           // 将 id（222 & 107）调整为Story功能按钮
+          let storyAid = magicJS.read(storyAidKey);
+          if (!storyAid){
+            storyAid = '246834163';
+          }
+          if (obj['data']['top']){
+            let top = obj['data']['top'].filter((e) =>{
+              return topList.has(e.id);
+            });
+            obj['data']['top'] = top;
+          }
+          if (obj['data']['bottom']){
+            let bottom = obj['data']['bottom'].filter((e) =>{return bottomList.has(e.id);});
+            obj['data']['bottom'] = bottom;
+          }
+          body = JSON.stringify(obj);
+        }
+        catch (err){
+          magicJS.logError(`标签页处理出现异常：${err}`);
+        }
+        break;
       // 我的页面处理，去除一些推广按钮
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
         try{
