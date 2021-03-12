@@ -58,8 +58,6 @@ let magicJS = MagicJS(scriptName, 'INFO');
         try{
           // 442 开始为概念版id
           const tabList = new Set([39, 40, 41, 42, 151, 442, 99, 100, 101]);
-          // 107 概念版游戏中心，获取修改为Story模式
-          const topList = new Set([176,222,107]);
           // 102 开始为概念版id
           const bottomList = new Set([177, 178, 179, 181, 102, 103, 104, 105, 106]);
           let obj = JSON.parse(magicJS.response.body);
@@ -72,7 +70,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
         try{
           let obj = JSON.parse(magicJS.response.body);
           // 425 开始为概念版id
-          const itemList = new Set([396,397,398,399,171,172,534,8,4,428,352,1,405,402,404,544,407,410,425,426,427,428,171,430,431,432]);
+          const itemList = new Set([396,398,399,171,172,534,8,4,428,352,1,405,402,404,544,407,410,425,426,427,428,171,430,431,432]);
           obj['data']['sections_v2'].forEach((element, index) => {
             let items = element['items'].filter((e) =>{return itemList.has(e.id);});
             obj['data']['sections_v2'][index].button = {}
