@@ -79,33 +79,6 @@ let magicJS = MagicJS(scriptName, 'INFO');
             let tab = obj['data']['tab'].filter((e) =>{return tabList.has(e.id);});
             obj['data']['tab'] = tab;
           }
-          // 将 id（222 & 107）调整为Story功能按钮
-          let storyAid = magicJS.read(storyAidKey);
-          if (!storyAid){
-            storyAid = '246834163';
-          }
-          if (obj['data']['top']){
-            let top = obj['data']['top'].filter((e) =>{
-              if (e.id === 222 || e.id === 107){
-                e.uri = `bilibili://story/${storyAid}`;
-                e.icon = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_icon.png";
-                e.tab_id = "Story_Top";
-                e.name = "Story";
-              }
-              return topList.has(e.id);
-            });
-            obj['data']['top'] = top;
-          }
-          if (obj['data']['bottom']){
-            let bottom = obj['data']['bottom'].filter((e) =>{return bottomList.has(e.id);});
-            obj['data']['bottom'] = bottom;
-          }
-          body = JSON.stringify(obj);
-        }
-        catch (err){
-          magicJS.logError(`标签页处理出现异常：${err}`);
-        }
-        break;
       // 我的页面处理，去除一些推广按钮
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
         try{
