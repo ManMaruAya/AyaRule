@@ -65,7 +65,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`开屏广告处理出现异常：${err}`);
         }
         break;
-      // 标签页处理，如去除会员购等等
+      // 标签页处理，如去除会员购等等 
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try{
           // 442 开始为概念版id
