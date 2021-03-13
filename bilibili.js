@@ -79,7 +79,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
             let tab = obj['data']['tab'].filter((e) =>{return tabList.has(e.id);});
             obj['data']['tab'] = tab;
           }
-          // 将 id（222 & 107）调整为Story功能按钮
+          // 取消顶部游戏中心按钮修改
           let storyAid = magicJS.read(storyAidKey);
           if (!storyAid){
             storyAid = '246834163';
@@ -105,7 +105,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
         try{
           let obj = JSON.parse(magicJS.response.body);
           // 425 开始为概念版id
-          const itemList = new Set([396,398,399,171,172,534,8,4,428,352,1,405,402,404,544,407,410,425,426,427,428,171,430,431,432]);
+          const itemList = new Set([425,426,427,428,171,430,431,432]);
           obj['data']['sections_v2'].forEach((element, index) => {
             let items = element['items'].filter((e) =>{return itemList.has(e.id);});
             obj['data']['sections_v2'][index].button = {}
