@@ -67,13 +67,6 @@ let magicJS = MagicJS(scriptName, 'INFO');
             obj['data']['tab'] = tab;
           }
       // 我的页面处理，去除一些推广按钮
-      case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
-          body = JSON.stringify(obj);
-        }
-        catch (err){
-          magicJS.logError(`我的页面处理出现异常：${err}`);
-        }
-        break;
       // 直播去广告
       case /^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom/.test(magicJS.request.url):
         try{
