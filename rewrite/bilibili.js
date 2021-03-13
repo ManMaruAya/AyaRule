@@ -4,36 +4,6 @@ let magicJS = MagicJS(scriptName, 'INFO');
   let body = null;
   if (magicJS.isResponse){
     switch (true){
-#推荐去广告
-      case /^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\?/.test(magicJS.request.url):
-        try{
-          let obj = JSON.parse(magicJS.response.body);
-          let items = [];
-          for (let item of obj['data']['items'] ){
-            if (item.hasOwnProperty('banner_item')){
-              let bannerItems = [];
-              for (let banner of item['banner_item']){
-                if (banner['is_ad'] != true && banner['is_ad_loc'] != true){
-                  bannerItems.push(banner);
-                }
-              }
-#去除广告后，如果banner大于等于1个才添加到响应体
-              if (bannerItems.length >= 1){
-                item['banner_item'] = bannerItems;
-                items.push(item);
-              }
-            }
-            else if (!item.hasOwnProperty('ad_info') && (item['card_type'] === 'small_cover_v2' || item['card_type'] === 'large_cover_v1')){
-              items.push(item);
-            }
-          }
-          obj['data']['items'] = items;
-          body = JSON.stringify(obj);
-        }
-        catch (err){
-          magicJS.logError(`推荐去广告出现异常：${err}`);
-        }
-        break;
 #标签页处理，如去除会员购等等
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try{
