@@ -1,10 +1,10 @@
-#隐私追踪
+# 隐私追踪
 host-suffix,api.sobot.com,reject
-#Blued广告
+# Blued广告
 host-suffix,api-access.pangolin-sdk-toutiao.com,reject
 host-suffix,log-api.pangolin-sdk-toutiao.com,reject
 host-suffix,pgdt.ugdtimg.com,reject
 host-suffix,sf3-be-pack.pglstatp-toutiao.com,reject
 host-suffix,sf6-be-pack.pglstatp-toutiao.com,reject
-#有道广告
+# 有道广告
 host-suffix,oimagea6.ydstatic.com,reject
