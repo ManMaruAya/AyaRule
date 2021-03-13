@@ -1,5 +1,4 @@
 const scriptName = 'BiliBili';
-const storyAidKey = 'story_aid';
 let magicJS = MagicJS(scriptName, 'INFO');
 ;(() => {
   let body = null;
@@ -35,18 +34,6 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`推荐去广告出现异常：${err}`);
         }
         break;
-      // 匹配story模式，用于记录Story的aid
-      case /^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story\?/.test(magicJS.request.url):
-        try{
-          let obj = JSON.parse(magicJS.response.body);
-          let lastItem = obj['data']['items'].pop();
-          let aid = lastItem['stat']['aid'].toString();
-          magicJS.write(storyAidKey, aid);
-        }
-        catch (err){
-          magicJS.logError(`记录Story的aid出现异常：${err}`);
-        }
-        break;
       // 开屏广告处理
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list/.test(magicJS.request.url):
         try{
@@ -80,32 +67,12 @@ let magicJS = MagicJS(scriptName, 'INFO');
             obj['data']['tab'] = tab;
           }
           // 取消顶部游戏中心按钮修改
-          let storyAid = magicJS.read(storyAidKey);
-          if (!storyAid){
-            storyAid = '246834163';
-          }
-          if (obj['data']['top']){
-            let top = obj['data']['top'].filter((e) =>{
-              return topList.has(e.id);
-            });
-            obj['data']['top'] = top;
-          }
-          if (obj['data']['bottom']){
-            let bottom = obj['data']['bottom'].filter((e) =>{return bottomList.has(e.id);});
-            obj['data']['bottom'] = bottom;
-          }
-          body = JSON.stringify(obj);
-        }
-        catch (err){
-          magicJS.logError(`标签页处理出现异常：${err}`);
-        }
-        break;
       // 我的页面处理，去除一些推广按钮
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
           // 425 开始为概念版id
-          const itemList = new Set([425,426,427,428,171,430,431,432]);
+          const itemList = new Set([432]);
           obj['data']['sections_v2'].forEach((element, index) => {
             let items = element['items'].filter((e) =>{return itemList.has(e.id);});
             obj['data']['sections_v2'][index].button = {}
