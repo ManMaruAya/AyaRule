@@ -66,21 +66,8 @@ let magicJS = MagicJS(scriptName, 'INFO');
             let tab = obj['data']['tab'].filter((e) =>{return tabList.has(e.id);});
             obj['data']['tab'] = tab;
           }
-          // 取消顶部游戏中心按钮修改
       // 我的页面处理，去除一些推广按钮
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
-        try{
-          let obj = JSON.parse(magicJS.response.body);
-          // 425 开始为概念版id
-          const itemList = new Set([432]);
-          obj['data']['sections_v2'].forEach((element, index) => {
-            let items = element['items'].filter((e) =>{return itemList.has(e.id);});
-            obj['data']['sections_v2'][index].button = {}
-            delete obj['data']['sections_v2'][index].be_up_title;
-            delete obj['data']['sections_v2'][index].tip_icon;
-            delete obj['data']['sections_v2'][index].tip_title;
-            obj['data']['sections_v2'][index]['items'] = items;
-          });
           body = JSON.stringify(obj);
         }
         catch (err){
