@@ -34,7 +34,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`推荐去广告出现异常：${err}`);
         }
         break;
-      // 开屏广告处理
+#开屏广告处理
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
@@ -52,25 +52,25 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`开屏广告处理出现异常：${err}`);
         }
         break;
-      // 标签页处理，如去除会员购等等
+#标签页处理，如去除会员购等等
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try{
-          // 442 开始为概念版id
+#442 开始为概念版id
           const tabList = new Set([39, 40, 41, 42, 151, 442, 99, 100, 101]);
-          // 107 概念版游戏中心，获取修改为Story模式
+#107 概念版游戏中心，获取修改为Story模式
           const topList = new Set([176,222,107]);
-          // 102 开始为概念版id
+#102 开始为概念版id
           const bottomList = new Set([177, 178, 179, 181, 102, 103, 104, 105, 106]);
           let obj = JSON.parse(magicJS.response.body);
           if (obj['data']['tab']){
             let tab = obj['data']['tab'].filter((e) =>{return tabList.has(e.id);});
             obj['data']['tab'] = tab;
           }
-      // 我的页面处理，去除一些推广按钮
+#我的页面处理，去除一些推广按钮
       case /^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
-          // 425 开始为概念版id
+#425 开始为概念版id
           const itemList = new Set([396,398,399,171,172,534,8,4,428,352,1,405,402,404,544,407,410,425,426,427,428,171,430,431,432]);
           obj['data']['sections_v2'].forEach((element, index) => {
             let items = element['items'].filter((e) =>{return itemList.has(e.id);});
@@ -86,7 +86,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`我的页面处理出现异常：${err}`);
         }
         break;
-      // 直播去广告
+#直播去广告
       case /^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
@@ -97,7 +97,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`直播去广告出现异常：${err}`);
         }
         break;
-      // 追番去广告
+#追番去广告
       case /^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
@@ -111,7 +111,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`追番去广告出现异常：${err}`);
         }
         break;
-      // 动态去广告
+#动态去广告
       case /^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
@@ -133,7 +133,7 @@ let magicJS = MagicJS(scriptName, 'INFO');
           magicJS.logError(`动态去广告出现异常：${err}`);
         }
         break;
-      // 去除统一设置的皮肤
+#去除统一设置的皮肤
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?/.test(magicJS.request.url):
         try{
           let obj = JSON.parse(magicJS.response.body);
