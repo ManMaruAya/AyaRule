@@ -4,12 +4,9 @@ const scriptName = 'BiliBili';
    let body = null;
    if (magicJS.isResponse){
      switch (true){
-       // 标签页处理，如去除会员购等等
        case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
          try{
-           // 442 开始为概念版id
            const tabList = new Set([39, 40, 41, 42, 151]);
-           // 102 开始为概念版id
            const bottomList = new Set([177, 178, 179, 181]);
            let obj = JSON.parse(magicJS.response.body);
            if (obj['data']['tab']){
