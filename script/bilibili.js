@@ -6,8 +6,9 @@ const scriptName = 'BiliBili';
      switch (true){
        case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
          try{
-           const tabList = new Set([39, 40, 41, 42, 151]);
-           const bottomList = new Set([177, 178, 179, 181]);
+           const tabList = new Set([39, 40, 41, 42, 151, 442, 99, 100, 101]);
+           const topList = new Set([176,222,107]);
+           const bottomList = new Set([177, 178, 179, 181, 102, 103, 104, 105, 106]);
            let obj = JSON.parse(magicJS.response.body);
            if (obj['data']['tab']){
              let tab = obj['data']['tab'].filter((e) =>{return tabList.has(e.id);});
