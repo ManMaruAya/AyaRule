@@ -5,34 +5,42 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾 01, server: cm01.mirusub.com, port: 1056, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇨🇳 台湾 02, server: cm01.mirusub.com, port: 1057, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇨🇳 台湾 03, server: cn2-1.mirusub.com, port: 1656, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇨🇳 台湾 04, server: cn2-1.mirusub.com, port: 1657, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇸🇬 新加坡 01, server: cm01.mirusub.com, port: 1058, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇸🇬 新加坡 02, server: cm01.mirusub.com, port: 1059, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇸🇬 新加坡 03, server: cn2-1.mirusub.com, port: 1658, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇸🇬 新加坡 04, server: cn2-1.mirusub.com, port: 1659, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇯🇵 日本 01, server: cm01.mirusub.com, port: 1050, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇯🇵 日本 02, server: cm01.mirusub.com, port: 1051, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇯🇵 日本 03, server: cn2-1.mirusub.com, port: 1650, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇯🇵 日本 04, server: cn2-1.mirusub.com, port: 1651, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇺🇸 美国 01, server: cn2-1.mirusub.com, port: 1654, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇺🇸 美国 02, server: cn2-1.mirusub.com, port: 1655, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇰🇷 韩国 01, server: cm01.mirusub.com, port: 1052, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇰🇷 韩国 02, server: cm01.mirusub.com, port: 1053, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇰🇷 韩国 03, server: cn2-1.mirusub.com, port: 1652, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇰🇷 韩国 04, server: cn2-1.mirusub.com, port: 1653, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 01, server: cm01.mirusub.com, port: 1060, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 02, server: cm01.mirusub.com, port: 1061, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 03, server: cm01.mirusub.com, port: 1062, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 04, server: cm01.mirusub.com, port: 1063, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 05, server: cm01.mirusub.com, port: 1064, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 06, server: cn2-1.mirusub.com, port: 1660, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 07, server: cn2-1.mirusub.com, port: 1661, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 08, server: cn2-1.mirusub.com, port: 1662, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 09, server: cn2-1.mirusub.com, port: 1663, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
-  - {name: 🇭🇰 香港 10, server: cn2-1.mirusub.com, port: 1664, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇨🇳 台湾01, server: cm01.mirusub.com, port: 1675, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇨🇳 台湾02, server: cm01.mirusub.com, port: 1676, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇨🇳 台湾03, server: cm01.mirusub.com, port: 1677, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇨🇳 台湾04, server: cm02.mirusub.com, port: 1675, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇨🇳 台湾05, server: cm02.mirusub.com, port: 1676, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇨🇳 台湾06, server: cm02.mirusub.com, port: 1677, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港01, server: cm01.mirusub.com, port: 1660, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港02, server: cm01.mirusub.com, port: 1661, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港03, server: cm01.mirusub.com, port: 1662, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港04, server: cm01.mirusub.com, port: 1663, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港05, server: cm01.mirusub.com, port: 1664, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港06, server: cm02.mirusub.com, port: 1660, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港07, server: cm02.mirusub.com, port: 1661, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港08, server: cm02.mirusub.com, port: 1662, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港09, server: cm02.mirusub.com, port: 1663, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇭🇰 香港10, server: cm02.mirusub.com, port: 1664, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇯🇵 日本01, server: cm01.mirusub.com, port: 1665, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇯🇵 日本02, server: cm01.mirusub.com, port: 1666, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇯🇵 日本03, server: cm01.mirusub.com, port: 1667, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇯🇵 日本04, server: cm02.mirusub.com, port: 1665, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇯🇵 日本05, server: cm02.mirusub.com, port: 1666, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇯🇵 日本06, server: cm02.mirusub.com, port: 1667, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇸🇬 新加坡01, server: cm01.mirusub.com, port: 1680, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇸🇬 新加坡02, server: cm01.mirusub.com, port: 1681, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇸🇬 新加坡03, server: cm01.mirusub.com, port: 1682, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇸🇬 新加坡04, server: cm02.mirusub.com, port: 1680, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇸🇬 新加坡05, server: cm02.mirusub.com, port: 1681, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇸🇬 新加坡06, server: cm02.mirusub.com, port: 1682, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇺🇸 美国 02, server: cn2-2.mirusub.com, port: 1655, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇺🇸 美国01, server: cn2-1.mirusub.com, port: 1654, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇰🇷 韩国01, server: cm01.mirusub.com, port: 1670, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇰🇷 韩国02, server: cm01.mirusub.com, port: 1671, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇰🇷 韩国03, server: cm01.mirusub.com, port: 1672, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇰🇷 韩国04, server: cm02.mirusub.com, port: 1670, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇰🇷 韩国05, server: cm02.mirusub.com, port: 1671, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
+  - {name: 🇰🇷 韩国06, server: cm02.mirusub.com, port: 1672, type: ssr, cipher: chacha20-ietf, password: Miru, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 511:27yHfu, obfs-param: 71c02511.microsoft.com}
 proxy-groups:
   - name: 全球加速
     type: select
@@ -40,38 +48,39 @@ proxy-groups:
       - 自动
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🇸🇬 新加坡
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
       - 🇺🇲 美国
       - 🇰🇷 韩国
+      - DIRECT
   - name: Youtube
     type: select
     proxies:
       - 全球加速
-      - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
       - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: Telegram
     type: select
     proxies:
       - 全球加速
-      - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
       - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: Netflix
     type: select
     proxies:
       - 全球加速
-      - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
       - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: 微软服务
@@ -79,40 +88,40 @@ proxy-groups:
     proxies:
       - DIRECT
       - 全球加速
-      - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🇸🇬 新加坡
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: 苹果服务
     type: select
     proxies:
       - DIRECT
       - 全球加速
-      - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🇸🇬 新加坡
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: 游戏平台
     type: select
     proxies:
       - DIRECT
       - 全球加速
-      - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🇸🇬 新加坡
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: 哔哩哔哩
     type: select
     proxies:
       - DIRECT
-      - 🇹🇼 台湾
       - 🇭🇰 香港
+      - 🇹🇼 台湾
   - name: 广告拦截
     type: select
     proxies:
@@ -125,8 +134,8 @@ proxy-groups:
       - 全球加速
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🇸🇬 新加坡
       - 🇯🇵 日本
+      - 🇸🇬 新加坡
       - 🇺🇲 美国
       - 🇰🇷 韩国
   - name: 自动
@@ -135,98 +144,114 @@ proxy-groups:
     interval: 300
     tolerance: 150
     proxies:
-      - 🇨🇳 台湾 01
-      - 🇨🇳 台湾 02
-      - 🇨🇳 台湾 03
-      - 🇨🇳 台湾 04
-      - 🇸🇬 新加坡 01
-      - 🇸🇬 新加坡 02
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 04
-      - 🇯🇵 日本 01
-      - 🇯🇵 日本 02
-      - 🇯🇵 日本 03
-      - 🇯🇵 日本 04
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国 02
-      - 🇰🇷 韩国 01
-      - 🇰🇷 韩国 02
-      - 🇰🇷 韩国 03
-      - 🇰🇷 韩国 04
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 02
-      - 🇭🇰 香港 03
-      - 🇭🇰 香港 04
-      - 🇭🇰 香港 05
-      - 🇭🇰 香港 06
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 09
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇭🇰 香港04
+      - 🇭🇰 香港05
+      - 🇭🇰 香港06
+      - 🇭🇰 香港07
+      - 🇭🇰 香港08
+      - 🇭🇰 香港09
       - 🇭🇰 香港 10
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇨🇳 台湾05
+      - 🇨🇳 台湾06
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇯🇵 日本05
+      - 🇯🇵 日本06
+      - 🇸🇬 新加坡01
+      - 🇸🇬 新加坡02
+      - 🇸🇬 新加坡03
+      - 🇸🇬 新加坡04
+      - 🇸🇬 新加坡05
+      - 🇸🇬 新加坡06
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇰🇷 韩国01
+      - 🇰🇷 韩国02
+      - 🇰🇷 韩国03
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国05
+      - 🇰🇷 韩国06
   - name: 🇭🇰 香港
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港 01
-      - 🇭🇰 香港 02
-      - 🇭🇰 香港 03
-      - 🇭🇰 香港 04
-      - 🇭🇰 香港 05
-      - 🇭🇰 香港 06
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 08
-      - 🇭🇰 香港 09
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇭🇰 香港04
+      - 🇭🇰 香港05
+      - 🇭🇰 香港06
+      - 🇭🇰 香港07
+      - 🇭🇰 香港08
+      - 🇭🇰 香港09
       - 🇭🇰 香港 10
-  - name: 🇯🇵 日本
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - 🇯🇵 日本 01
-      - 🇯🇵 日本 02
-      - 🇯🇵 日本 03
-      - 🇯🇵 日本 04
-  - name: 🇺🇲 美国
-    type: url-test
-    url: http://www.google.com/generate_204
-    interval: 300
-    tolerance: 150
-    proxies:
-      - 🇺🇸 美国 01
-      - 🇺🇸 美国 02
   - name: 🇹🇼 台湾
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾 01
-      - 🇨🇳 台湾 02
-      - 🇨🇳 台湾 03
-      - 🇨🇳 台湾 04
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇨🇳 台湾05
+      - 🇨🇳 台湾06
+  - name: 🇯🇵 日本
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇯🇵 日本05
+      - 🇯🇵 日本06
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 01
-      - 🇸🇬 新加坡 02
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 04
+      - 🇸🇬 新加坡01
+      - 🇸🇬 新加坡02
+      - 🇸🇬 新加坡03
+      - 🇸🇬 新加坡04
+      - 🇸🇬 新加坡05
+      - 🇸🇬 新加坡06
+  - name: 🇺🇲 美国
+    type: url-test
+    url: http://www.google.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
   - name: 🇰🇷 韩国
     type: url-test
     url: http://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 韩国 01
-      - 🇰🇷 韩国 02
-      - 🇰🇷 韩国 03
-      - 🇰🇷 韩国 04
+      - 🇰🇷 韩国01
+      - 🇰🇷 韩国02
+      - 🇰🇷 韩国03
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国05
+      - 🇰🇷 韩国06
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,DIRECT
  - DOMAIN-SUFFIX,ip6-localhost,DIRECT
@@ -1961,6 +1986,7 @@ rules:
  - DOMAIN-KEYWORD,skydrive,微软服务
  - DOMAIN-SUFFIX,livefilestore.com,微软服务
  - DOMAIN-SUFFIX,login.live.com,微软服务
+ - DOMAIN-SUFFIX,microsoft.com,微软服务
  - DOMAIN-SUFFIX,oneclient.sfx.ms,微软服务
  - DOMAIN-SUFFIX,onedrive.com,微软服务
  - DOMAIN-SUFFIX,onedrive.live.com,微软服务
@@ -2142,6 +2168,7 @@ rules:
  - DOMAIN-SUFFIX,abema.tv,全球加速
  - DOMAIN-SUFFIX,ameba.jp,全球加速
  - DOMAIN-SUFFIX,hayabusa.io,全球加速
+ - DOMAIN-SUFFIX,hiccears.com,全球加速
  - DOMAIN-SUFFIX,c4assets.com,全球加速
  - DOMAIN-SUFFIX,channel4.com,全球加速
  - DOMAIN, atv-ps.amazon.com,全球加速
