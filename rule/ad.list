@@ -1,10 +1,15 @@
-# 隐私追踪
-host-suffix,api.sobot.com,reject
-# Blued广告
+# 秒针
+host-suffix,g.cn.miaozhen.com,reject
+# QQ
+host-suffix,sdk.e.qq.com,reject
+# 头条
 host-suffix,api-access.pangolin-sdk-toutiao.com,reject
 host-suffix,log-api.pangolin-sdk-toutiao.com,reject
-host-suffix,pgdt.ugdtimg.com,reject
 host-suffix,sf3-be-pack.pglstatp-toutiao.com,reject
 host-suffix,sf6-be-pack.pglstatp-toutiao.com,reject
-# 有道广告
+# 智齿
+host-suffix,api.sobot.com,reject
+# 有道
 host-suffix,oimagea6.ydstatic.com,reject
+# 友盟
+host-suffix,pgdt.ugdtimg.com,reject
