@@ -3,13 +3,14 @@ host-suffix,g.cn.miaozhen.com,reject
 # QQ
 host-suffix,sdk.e.qq.com,reject
 # 头条
-host-suffix,api-access.pangolin-sdk-toutiao.com,reject
-host-suffix,log-api.pangolin-sdk-toutiao.com,reject
-host-suffix,sf3-be-pack.pglstatp-toutiao.com,reject
-host-suffix,sf6-be-pack.pglstatp-toutiao.com,reject
-# 智齿
-host-suffix,api.sobot.com,reject
+host-suffix,pglstatp-toutiao.com,reject
+# 微博
+host-suffix,adimg.uve.weibo.com,reject
 # 有道
 host-suffix,oimagea6.ydstatic.com,reject
+# 优酷
+host-suffix,r1.ykimg.com,reject
 # 友盟
 host-suffix,pgdt.ugdtimg.com,reject
+# 智齿
+host-suffix,api.sobot.com,reject
