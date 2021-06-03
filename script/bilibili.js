@@ -6,12 +6,9 @@ const scriptName = 'BiliBili';
      switch (true){
       case /^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab/.test(magicJS.request.url):
         try {
-          // 442 开始为概念版id 适配港澳台代理模式
-          const tabList = new Set([39, 40, 41, 42, 151, 442, 99, 100, 101, 554, 556]);
-          // 107 概念版游戏中心，获取修改为Story模式
-          const topList = new Set([176, 222, 107]);
-          // 102 开始为概念版id
-          const bottomList = new Set([177, 178, 179, 181, 102, 103, 104, 105, 106]);
+          const tabList = new Set([39, 40, 41, 42, 151]);
+          const topList = new Set([176, 222]);
+          const bottomList = new Set([177, 178, 179, 181]);
           let obj = JSON.parse(magicJS.response.body);
           if (obj["data"]["tab"]) {
             let tab = obj["data"]["tab"].filter((e) => {
