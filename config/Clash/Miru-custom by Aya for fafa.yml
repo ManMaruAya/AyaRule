@@ -118,18 +118,6 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇰🇷 韩国
-  - name: Apple
-    type: select
-    proxies:
-      - DIRECT
-      - 全球加速
-      - 🇭🇰 港台 🇹🇼
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - 🇰🇷 韩国
   - name: 自动
     type: url-test
     url: http://www.google.com/generate_204
@@ -281,10 +269,8 @@ rules:
   - RULE-SET,哔哩哔哩,哔哩哔哩
   - RULE-SET,国内站点,DIRECT
   - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,Apple,Apple
   - RULE-SET,Google,🇯🇵 日本
   - RULE-SET,PayPal,🇺🇸 美国
   - RULE-SET,pixiv,🇯🇵 日本
-  - RULE-SET,Steam,🇭🇰 港台 🇹🇼
   - RULE-SET,全球站点,全球加速
   - MATCH,DIRECT
