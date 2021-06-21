@@ -268,7 +268,7 @@ rules:
   - RULE-SET,广告拦截,REJECT
   - RULE-SET,哔哩哔哩,哔哩哔哩
   - RULE-SET,国内站点,DIRECT
-  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Microsoft,🇭🇰 港台 🇹🇼
   - RULE-SET,Google,🇯🇵 日本
   - RULE-SET,PayPal,🇺🇸 美国
   - RULE-SET,pixiv,🇯🇵 日本
