@@ -29,13 +29,6 @@ rule-providers:
    path: ./rule/Microsoft.yaml
    interval: 84600
 
-  Apple:
-   type: http
-   behavior: classical
-   url: https://raw.fastgit.org/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple.yaml
-   path: ./rule/Apple.yaml
-   interval: 86400
-
   Google:
    type: http
    behavior: classical
@@ -49,21 +42,7 @@ rule-providers:
    url: https://raw.fastgit.org/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.yaml
    path: ./rule/PayPal.yaml
    interval: 84600
-
-  pixiv:
-   type: http
-   behavior: classical
-   url: https://raw.fastgit.org/blackmatrix7/ios_rule_script/release/rule/Clash/Pixiv/Pixiv.yaml
-   path: ./rule/pixiv.yaml
-   interval: 84600
-
-  Steam:
-   type: http
-   behavior: classical
-   url: https://raw.fastgit.org/blackmatrix7/ios_rule_script/release/rule/Clash/Steam/Steam.yaml
-   path: ./rule/Steam.yaml
-   interval: 84600
-
+   
   全球站点:
    type: http
    behavior: classical
