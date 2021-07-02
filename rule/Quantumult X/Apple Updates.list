@@ -1,0 +1,3 @@
+host-suffix,swscan.apple.com,reject
+host-suffix,swcdn.apple.com,reject
+host-suffix,swdist.apple.com,reject
