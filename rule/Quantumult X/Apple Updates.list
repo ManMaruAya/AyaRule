@@ -1,3 +1,3 @@
-host-suffix,swscan.apple.com,reject
-host-suffix,swcdn.apple.com,reject
-host-suffix,swdist.apple.com,reject
+host-suffix,swscan.apple.com,Apple更新
+host-suffix,swcdn.apple.com,Apple更新
+host-suffix,swdist.apple.com,Apple更新
