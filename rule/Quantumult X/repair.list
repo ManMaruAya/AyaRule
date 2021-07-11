@@ -1,4 +1,3 @@
-ip-cidr, 203.107.1.1/24, reject
 host-suffix,adshax.m.taobao.com,direct
 host-suffix,h-adashx.ut.taobao.com,direct
 host-suffix,amdc.m.taobao.com,direct
